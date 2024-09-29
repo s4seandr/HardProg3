@@ -90,8 +90,8 @@ In dem Ordner "3D-Drucker_Vorlagen" ist die für dieses Projekt erstellte Hülle
 Wie auf den Abbildungen zu erkennen ist, hat der Lichtsensor extra eine Aussparung, in der der Sensor eingesetzt werden kann und für den BME280 wurde eine extra Überdachung erstellt, um diesen vor Wasserschäden zu schützen. <br>
 In der Unterseite wird das Batteriemodul eingesetzt. Wie an der seitlichen Ansicht zu sehen ist, wurden kleine Löscher in die Seite der Hülle eingesetzt, damit bei dem Modul keine Überhitzung im Sommer zu befürchten ist.
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/8c857b0c-e743-4559-b5b8-1c27ed935fed" width="45%" />
   <img src="https://github.com/user-attachments/assets/6c227d95-c023-4bd5-a7f7-2c1b53bf720d" width="45%" />
+  <img src="https://github.com/user-attachments/assets/8c857b0c-e743-4559-b5b8-1c27ed935fed" width="45%" />
 </p>
 
 ### 3.3 Anmerkungen zum Code
