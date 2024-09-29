@@ -37,7 +37,9 @@ Bei meinem Projekt nutze ich zwei ESP32, die mit jeweils einem BME280 und einem 
           <img src="https://github.com/user-attachments/assets/e0545760-7253-477e-8b14-d6c34914deab" align="left" width="50%">
         <br clear="left">
           Die genutzten Akkus sind 3.7V NiMH Akkus mit einer Kapazität von 3000mAh. Sie haben das Format 18650.
-          ![image](https://github.com/user-attachments/assets/652f8ff0-d77d-4a0f-960b-caca0fa136df)
+           <br>
+          <img src="https://github.com/user-attachments/assets/652f8ff0-d77d-4a0f-960b-caca0fa136df" align="left" width="50%">
+        <br clear="left">
 
 - **1x RaspberryPI Zero (WH) (23,49€)** <br>
           Der Raspberry Pi Zero WH ist eine kompakte und kostengünstige Version des Raspberry Pi, die mit einer vorinstallierten GPIO-Stiftleiste geliefert wird. Dies erleichtert die Verbindung mit anderen Geräten und Sensoren, ohne dass Löten erforderlich ist.
