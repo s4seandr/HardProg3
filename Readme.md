@@ -83,7 +83,7 @@ Anschließend muss das Datenkabel der RGB-Matrix mit dem IDC-Anschluss auf dem R
 
 ### 3.2 Anmerkungen zum Code
 #### 3.2.1 ESP32
-Für den Code habe ich unter anderem die folgenden Bibliotheken genutzt: 
+Für das Modul habe ich unter anderem die folgenden Bibliotheken genutzt: 
 - **WiFi.h:** zum Erstellen einer W-Lan-Verbindung
 - **HTTPClient.h** zum Erstellen der HTTP-Anfragen
 - **Adafruit_BME280.h** zum Auslesen der Werte des BME280
