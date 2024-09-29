@@ -99,6 +99,8 @@ Die wichtigsten, in diesem Code verwendeten Bibliotheken sind:
 - **Flask:** zum Erstellen des Webservers, der HTTP-Anfrage empfängt
 - **RGBMatrix:** zum Steuern der RGB-Matrix
 - **time & threading:** zum Verwalten der Zeit und zum regelmäßigen Aktualisieren der Anzeige
+<br>
+Die Flask-POST-Route "/data" empfängt die Daten von den ESP32-Geräten. Zu Beginn wird geprüft, ob username und password richtig sind. und die Werte aus dem Request in passenden Variablen gespeichert. Anschließend werden die Daten analysiert um zu prüfen, ob es wahrscheinlich regnet oder nicht. Als Parameter dafür werden Werte von Luftfeuchtigkeit über 80%
 
 ## 4. Evaluation
 
