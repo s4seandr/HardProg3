@@ -39,7 +39,8 @@ Bei meinem Projekt nutze ich zwei ESP32, die mit jeweils einem BME280 und einem 
           ![image](https://github.com/user-attachments/assets/97870010-1886-4e30-beee-abe3eaa504a7)
 
 - **1x RGB-Matrix (64x32) (29,99€)**
-          Die Matrix besteht aus 2048 RGB-LEDs und ermöglicht die Darstellung von Texten, farbigen Bildern und Animationen.
+          Die Matrix besteht aus 2048 RGB-LEDs und ermöglicht die Darstellung von Texten, farbigen Bildern
+          und Animationen.
           ![image](https://github.com/user-attachments/assets/3d109b13-05a8-4769-8cd5-41f64850c5a8)
   
 - **1x 3d-gedruckte Hülle für den Outdoor-Sensor (1 Kasten Bayreuther Bier)**
