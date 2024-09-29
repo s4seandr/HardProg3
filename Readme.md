@@ -26,7 +26,7 @@ Bei meinem Projekt nutze ich zwei ESP32, die mit jeweils einem BME280 und einem 
            Das Batteriemodul hat Platz für 2 Batterien und verfügt über einen integrierten Überspannschutz und hat im Gegensatz zu hat mehrere nutzbare Ausgänge und im Gegensatz zu den meisten herkömmlichen Powerbanks die Möglichkeit ein automatisches Abstellen des Stromflusses bei zu geringem Verbrauch zu verhindern.
            Da bei diesem Projekt der Deep-Sleep-Modus des ESP32 genutzt wird, ist das unerlässlich.
            ![image](https://github.com/user-attachments/assets/e0545760-7253-477e-8b14-d6c34914deab)
-                
+  
           Die genutzten Akkus sind 3.7V NiMH Akkus mit einer Kapazität von 3000mAh. Sie haben das Format 18650.
           ![image](https://github.com/user-attachments/assets/652f8ff0-d77d-4a0f-960b-caca0fa136df)
 
