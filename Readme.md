@@ -7,13 +7,16 @@ Bei meinem Projekt nutze ich zwei ESP32, die mit jeweils einem BME280 und einem 
 
 ## 2. Beschreibung der genutzten Hardware-Komponenten
 - **2x ESP32 (12,99€)** <br>
-        Bei den genutzten ESPs handelt es sich um ESP32 Typ C NodeMCU Entwicklungsboards. Jedes Board ist mit einem ESP-WROOM-32 Modul ausgestattet, das einen leistungsstarken Mikrocontroller mit Dual-Core-Prozessoren und integrierter 2.4GHz Dual-Mode WiFi und Bluetooth-Funktionalität bietet. Durch den Deep-            Sleep-Modus eignet sich der ESP32 besonders gut für dieses Projekt, da das Outdoor-Modul mit einem Akku betrieben werden muss. <br>
+        Bei den genutzten ESPs handelt es sich um ESP32 Typ C NodeMCU Entwicklungsboards. Jedes Board ist mit einem ESP-WROOM-32 Modul ausgestattet, das einen leistungsstarken Mikrocontroller mit Dual-Core-Prozessoren und integrierter 2.4GHz Dual-Mode WiFi und Bluetooth-Funktionalität bietet. Durch den Deep-            Sleep-Modus eignet sich der ESP32 besonders gut für dieses Projekt, da das Outdoor-Modul mit einem Akku betrieben werden muss.
+          <br>
           <img src="https://github.com/user-attachments/assets/5f817885-a866-432a-8d2b-a6fd6bf78989" align="left" width="50%">
         <br clear="left">
         
 - **2x BME280 (15,99€)** <br>
          Der BME280 ist ein Sensor-Modul, dass die Temperatur, Luftfeuchtigkeit und Luftdruck messen kann. Sie nutzen eine Spannung von 5V und sind mit einem IIC/I2C Interface ausgestattet, was sie kompatibel mit Arduino und Raspberry Pi macht. Ein Nachteil des BME280 ist jedoch, dass er sich beim Dauereinstatz         erwärmt, was zu falschen Messergebnissen führen kann. Da die Daten jedoch nur alle 10 Minuten aktualiesert werden, ist das für dieses Projekt kein Problem. 
-         ![image](https://github.com/user-attachments/assets/4e1ee3b0-edd7-4a2a-b240-b7e364605037)
+        <br>
+          <img src="https://github.com/user-attachments/assets/4e1ee3b0-edd7-4a2a-b240-b7e364605037" align="left" width="50%">
+        <br clear="left">
 
 - **2x Lichtsensor (5,49€)** <br>
          Als Lichtsensoren wurden KY-018 LDR (Light Dependent Resistor) Lichtsensor-Module genutzt. Diese Sensoren messen die Helligkeit des Umgebungslichts und bestehen aus einer Fotodiode, die an einen Widerstand gekoppelt ist. Der Widerstandswert des Sensors ändert sich je nach Lichtintensität.
