@@ -94,6 +94,7 @@ In der Unterseite wird das Batteriemodul eingesetzt. Wie an der seitlichen Ansic
   <img src="https://github.com/user-attachments/assets/6c227d95-c023-4bd5-a7f7-2c1b53bf720d" width="45%" />
   <img src="https://github.com/user-attachments/assets/8c857b0c-e743-4559-b5b8-1c27ed935fed" width="45%" />
 </p>
+Im zu Beginn genannten Ordner sind für die Unter- und Oberseite der Hülle zwei Dateien enthalten. Die STL-Datei enthält die 3D-Daten, die mit einem CAD-Programm nach den eigenen Bedingungen angepasst werden kann. Die GCODE-Datei ist aus der STL-Datei durch ein Slicer-Programm erstellt worden und enthält die Anweisungen für den 3D-Drucker, wie z.B. die Druckbahnen, Geschwindigkeit und Temperatur. Da es sich bei dem Modul um ein Outdoor-Modul handelt, sollte ASA als Material verwendet werden, da dieses weitaus Wetterbeständiges ist als das öfters genutzte Material PLA.
 
 ### 3.3 Anmerkungen zum Code
 #### 3.3.1 ESP32
