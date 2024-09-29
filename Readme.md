@@ -101,7 +101,7 @@ Die wichtigsten, in diesem Code verwendeten Bibliotheken sind:
 - **time & threading:** zum Verwalten der Zeit und zum regelmäßigen Aktualisieren der Anzeige
 <br>
 Die Flask-POST-Route "/data" empfängt die Daten von den ESP32-Geräten. Zu Beginn wird geprüft, ob username und password richtig sind. und die Werte aus dem Request in passenden Variablen gespeichert. Anschließend werden die Daten analysiert um zu prüfen, ob es wahrscheinlich regnet oder nicht. Bei Regen hat man eine hohe Luftfeuchtigkeit sowie einen geringen Luftdruck. Daher habe ich mich dazu entschieden, die Kriterien für Regen auf humidity > 80 und pressure < 1009 zu setzen. Ansonsten wird der Wert "No Rain" vergeben. Wenn das ESP32 ein "ESP32_indoor" ist, werden anschließend die Daten von indoor_data upgedated, wenn der ESP32 ein "ESP32_outdoor" ist, werden die Werte von outdoor_data upgedated. indoor_data und outdoor_data sind globale Variablen, die die Daten des Indoor bzw. Outdoor Gerätes speichert. <br>
-In der folgenden Funktion namens "update_display()" werden die grafischen Elemente erstellt und auf der RGB-Matrix angezeigt. Die Anzeige wechselt alle 30 Sekunden zwischen der Anzeige der Indoor- oder Outdoor-Werte.
+In der folgenden Funktion namens "update_display()" werden die grafischen Elemente erstellt und auf der RGB-Matrix angezeigt. Die Anzeige wechselt alle 30 Sekunden zwischen der Anzeige der Indoor- oder Outdoor-Werte. Hierbei wird Threading verwendet, um die Anzeige regelmäßig zu aktualisieren, ohne den Hauptthread zu blockieren. Dadurch kann der Server weiterhin Anfragen empfangen und verarbeiten, während die Anzeige im Hintergrund aktualisiert wird.
 
 ## 4. Evaluation
 
