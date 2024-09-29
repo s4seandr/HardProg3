@@ -15,7 +15,7 @@ Bei meinem Projekt nutze ich zwei ESP32, die mit jeweils einem BME280 und einem 
          ![image](https://github.com/user-attachments/assets/4e1ee3b0-edd7-4a2a-b240-b7e364605037)
 
 - **2x Lichtsensor (5,49€)**
-         Als Lichtsensoren wurden KY-018 LDR (Light Dependent Resistor) Lichtsensor-Module genutzt. Diese Sensoren messen die Helligkeit des Umgebungslichts und bestehen aus einer Fotodiode, die an einen Widerstand gekoppelt ist. Der Widerstandswert des Sensors ändert sich je nach Lichtintensität
+         Als Lichtsensoren wurden KY-018 LDR (Light Dependent Resistor) Lichtsensor-Module genutzt. Diese Sensoren messen die Helligkeit des Umgebungslichts und bestehen aus einer Fotodiode, die an einen Widerstand gekoppelt ist. Der Widerstandswert des Sensors ändert sich je nach Lichtintensität.
          ![image](https://github.com/user-attachments/assets/26e6f839-9e0a-4e8f-9716-f92a50a15c58)
   
 - **14x Jumper Cable (10cm, 7x Male-Female, 7x Female-Female) (6,99€)**
@@ -56,7 +56,8 @@ Für den Lichtsensor habe ich die PINs VIN, GND und D34 genutzt. VIN und GND wer
 Für den BME280 habe ich die PINs 3V3, GND, D21 und D22 genutzt. Ebenfalls wie beim Lichtsensor werden 3V3 und GND für die Stromzufuhr zum Messsensor benötigt. Die weiteren genutzten PINs 21 und 22 sind die Standard-PINs für das I2C-Protokoll zur Datenübertragung. D21 muss für SDA (Serial Data) genutzt werden und D22 für SCL (Serial Clock).
 
 #### 3.1.2 Raspberry PI Zero (WH)
-Auf den Raspberry PI
+Auf den Raspberry PI Zero (WH) muss das RGB-Matrix-Bonnet angeschlossen werden. Hierfür müssen der Bonnet entsprechend auf die Header gesetzt werden. Anschließend muss das Datenkabel der RGB-Matrix mit dem IDC-Anschluss auf dem RGB-Matrix-Bonnet verbunden werden. Hierbei ist zu beachten, dass die Ausrichtung der Pins korrekt ist. Dann muss das Stromkabel der RGB-Matrix an die Stromanschlüsse auf dem RGB-Matrix-Bonnet angeschlossen werden. Dabei ist auf die Polarität des Stromanschluss zu achten.
+
 
 ## 4. Evaluation
 
