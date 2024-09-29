@@ -100,7 +100,7 @@ Die wichtigsten, in diesem Code verwendeten Bibliotheken sind:
 - **RGBMatrix:** zum Steuern der RGB-Matrix
 - **time & threading:** zum Verwalten der Zeit und zum regelmäßigen Aktualisieren der Anzeige
 <br>
-Die Flask-POST-Route "/data" empfängt die Daten von den ESP32-Geräten. Zu Beginn wird geprüft, ob username und password richtig sind. und die Werte aus dem Request in passenden Variablen gespeichert. Anschließend werden die Daten analysiert um zu prüfen, ob es wahrscheinlich regnet oder nicht. Als Parameter dafür werden Werte von Luftfeuchtigkeit über 80%
+Die Flask-POST-Route "/data" empfängt die Daten von den ESP32-Geräten. Zu Beginn wird geprüft, ob username und password richtig sind. und die Werte aus dem Request in passenden Variablen gespeichert. Anschließend werden die Daten analysiert um zu prüfen, ob es wahrscheinlich regnet oder nicht. Bei Regen hat man eine hohe Luftfeuchtigkeit sowie einen geringen Luftdruck. Daher habe ich mich dazu entschieden, die Kriterien für Regen auf humidity > 80 und pressure < 1009 zu setzen. Ansonsten wird der Wert "No Rain" vergeben. Wenn das ESP32 ein "ESP32_indoor" ist, werden anschließend die Daten von indoor_data upgedated, wenn der ESP32 ein "ESP32_outdoor" ist, werden die Werte von outdoor_data upgedated.
 
 ## 4. Evaluation
 
