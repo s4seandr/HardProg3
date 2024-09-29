@@ -66,11 +66,12 @@ Anschließend muss das Datenkabel der RGB-Matrix mit dem IDC-Anschluss auf dem R
 
 ### 3.2 Anmerkungen zum Code
 #### 3.2.1 ESP32
-Für den Code habe ich die folgenden Bibliotheken genutzt: 
+Für den Code habe ich unter anderem die folgenden Bibliotheken genutzt: 
 - **WiFi.h:** zum Erstellen einer W-Lan-Verbindung
 - **HTTPClient.h** zum Erstellen der HTTP-Anfragen
 - **Adafruit_BME280.h** zum Auslesen der Werte des BME280
-
+Für den Code müssen noch WLAN-SSID und WLAN-Passwort im Code hinterlegt werden. Neben den WLAN-Zugangsdaten müssen/sollten auch noch User und Passwort für den HTTP-Request abgesendet werden.
+Anschließend wird vom ESP32 die Verbindung mit dem WLAN gestartet und so lange gewartet, bis die Verbindung hergestellt wurde.
 
 #### 3.2.2 Raspberry PI Zero (WH)
 Für die Implementierung des Codes wird das Github-Repository von RPI-RGB-LED-Matrix von H. Zeller genutzt (https://github.com/hzeller/rpi-rgb-led-matrix).
