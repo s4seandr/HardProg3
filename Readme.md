@@ -87,7 +87,6 @@ Für das Modul (ESP32WeatherStation) habe ich unter anderem die folgenden Biblio
 - **WiFi.h:** zum Erstellen einer W-Lan-Verbindung
 - **HTTPClient.h** zum Erstellen der HTTP-Anfragen
 - **Adafruit_BME280.h** zum Auslesen der Werte des BME280
-<br>
 Für den Code müssen noch WLAN-SSID und WLAN-Passwort im Code hinterlegt werden. Neben den WLAN-Zugangsdaten müssen/sollten auch noch User und Passwort für den HTTP-Request abgesendet werden.
 Anschließend wird vom ESP32 die Verbindung mit dem WLAN gestartet und so lange gewartet, bis die Verbindung hergestellt wurde. Nachdem dann geprüft wurde, ob die Sensoren vorhanden sind und die Daten ermittelt wurden, erstellt der ESP32 einen HTTP-Request und sendet die Daten an den Server. Neben den Sensordaten, übermittelt der ESP32 auch, ob es sich um den "ESP32_indoor" oder "ESP32_outdoor" handelt, so kann der Server später entscheiden, woher die Daten kommen.
 Nachdem ein Responsecode erhalten wurde, geht der ESP32 für 10 Minuten in den Deep Sleep. Dieser sorgt dafür, dass der ESP32 in dieser Zeit nur eine sehr geringe Menge an Strom verbraucht und statt nur einigen Tagen einige Monate arbeiten kann, ohne dass die Akkus gewechselt werden müssen.
@@ -99,7 +98,6 @@ Die wichtigsten, in diesem Code verwendeten Bibliotheken sind:
 - **Flask:** zum Erstellen des Webservers, der HTTP-Anfrage empfängt
 - **RGBMatrix:** zum Steuern der RGB-Matrix
 - **time & threading:** zum Verwalten der Zeit und zum regelmäßigen Aktualisieren der Anzeige
-<br>
 Die Flask-POST-Route "/data" empfängt die Daten von den ESP32-Geräten. Zu Beginn wird geprüft, ob username und password richtig sind. und die Werte aus dem Request in passenden Variablen gespeichert. Anschließend werden die Daten analysiert um zu prüfen, ob es wahrscheinlich regnet oder nicht. Bei Regen hat man eine hohe Luftfeuchtigkeit sowie einen geringen Luftdruck. Daher habe ich mich dazu entschieden, die Kriterien für Regen auf humidity > 80 und pressure < 1009 zu setzen. Ansonsten wird der Wert "No Rain" vergeben. Wenn das ESP32 ein "ESP32_indoor" ist, werden anschließend die Daten von indoor_data upgedated, wenn der ESP32 ein "ESP32_outdoor" ist, werden die Werte von outdoor_data upgedated. indoor_data und outdoor_data sind globale Variablen, die die Daten des Indoor bzw. Outdoor Gerätes speichert. <br>
 In der folgenden Funktion namens "update_display()" werden die grafischen Elemente erstellt und auf der RGB-Matrix angezeigt. Die Anzeige wechselt alle 30 Sekunden zwischen der Anzeige der Indoor- oder Outdoor-Werte. Hierbei wird Threading verwendet, um die Anzeige regelmäßig zu aktualisieren, ohne den Hauptthread zu blockieren. Dadurch kann der Server weiterhin Anfragen empfangen und verarbeiten, während die Anzeige im Hintergrund aktualisiert wird.
 
