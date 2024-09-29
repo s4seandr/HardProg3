@@ -121,3 +121,4 @@ In der folgenden Funktion namens "update_display()" werden die grafischen Elemen
 ## 4. Fazit
 Wie in der folgenden Abbildung zu sehen ist, funktioniert das Modul wie gewünscht: <br>
 ![Matrix](https://github.com/user-attachments/assets/32f5fc16-19c9-446c-bd29-7f35798c6324)
+Die Ergebnisse der Wetterstation sind 
