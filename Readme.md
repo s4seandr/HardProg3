@@ -7,8 +7,11 @@ Bei meinem Projekt nutze ich zwei ESP32, die mit jeweils einem BME280 und einem 
 
 ## 2. Beschreibung der genutzten Hardware-Komponenten
 - 2x ESP32 (12,99€)
-    Bei den genutzten ESPs handelt es sich um ESP32 Typ C NodeMCU Entwicklungsboards. Jedes Board ist mit einem ESP-WROOM-32 Modul ausgestattet, das einen leistungsstarken Mikrocontroller mit Dual-Core-Prozessoren und integrierter 2.4GHz Dual-Mode WiFi und Bluetooth-Funktionalität bietet.
+        Bei den genutzten ESPs handelt es sich um ESP32 Typ C NodeMCU Entwicklungsboards. Jedes Board ist mit einem ESP-WROOM-32 Modul ausgestattet, das einen leistungsstarken Mikrocontroller mit Dual-Core-Prozessoren und integrierter 2.4GHz Dual-Mode WiFi und Bluetooth-Funktionalität bietet.
+        ![image](https://github.com/user-attachments/assets/5f817885-a866-432a-8d2b-a6fd6bf78989)
+
 - 2x BME280
+        
 - 2x Lichtsensor
 - 1x Batteriemodul mit 2x wiederaufladbaren Akkus
 - 1x RaspberryPI Zero (WH)
