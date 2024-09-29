@@ -75,8 +75,8 @@ void setup() {
     http.end();
   }
 
-  //deep sleep 300s /60s
-  esp_sleep_enable_timer_wakeup(60000000);
+  //deep sleep 600s / 10min
+  esp_sleep_enable_timer_wakeup(600000000);
   esp_deep_sleep_start();
 }
 
