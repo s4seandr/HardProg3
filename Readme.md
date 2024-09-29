@@ -62,7 +62,7 @@ Auf den Raspberry PI Zero (WH) muss das RGB-Matrix-Bonnet angeschlossen werden. 
 #### 3.2.1 ESP32
 
 #### 3.2.2 Raspberry PI Zero (WH)
-
+Für die Implementierung des Codes wird das Github-Repository von RPI-RGB-LED-Matrix von H. Zeller genutzt (https://github.com/hzeller/rpi-rgb-led-matrix).
 ## 4. Evaluation
 
 ## 5. Fazit
