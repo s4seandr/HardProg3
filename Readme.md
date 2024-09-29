@@ -87,7 +87,7 @@ In dem Ordner "3D-Drucker_Vorlagen" ist die für dieses Projekt erstellte Hülle
   <img src="https://github.com/user-attachments/assets/0ee92d79-56e6-41cc-8a5e-220ca954fb24" width="45%" />
   <img src="https://github.com/user-attachments/assets/fc6051e2-60aa-47cc-9721-9e0c4d14cada" width="45%" />
 </p>
-Wie auf den Abbildungen zu erkennen ist, hat der Lichtsensor extra eine Aussparung, in der der Sensor eingesetzt werden kann und für den BME280 wurde eine extra Überdachung erstellt, um diesen vor Wasserschäden zu schützen. <br>
+Wie auf den Abbildungen zu erkennen ist, hat der Lichtsensor extra eine Aussparung, in die der Sensor eingesetzt werden kann und für den BME280 wurde eine extra Überdachung erstellt, um diesen vor Wasserschäden zu schützen. <br>
 
 In der Unterseite wird das Batteriemodul eingesetzt. Wie an der seitlichen Ansicht zu sehen ist, wurden kleine Löcher in die Seite der Hülle eingesetzt, damit bei dem Modul keine Überhitzung im Sommer zu befürchten ist. Sowohl das Batteriemodul als auch das ESP32 werden mit 2,5mm dicken und 6mm langen Zylinderschrauben befestigt. Ebenso werden die beiden Seiten der Hülle mit 2,5mm dicken jedoch 20mm langen Zylinderschrauben miteinander verschlossen. 
 <p align="center">
