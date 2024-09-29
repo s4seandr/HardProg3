@@ -119,3 +119,4 @@ Die Flask-POST-Route "/data" empfängt die Daten von den ESP32-Geräten. Zu Begi
 In der folgenden Funktion namens "update_display()" werden die grafischen Elemente erstellt und auf der RGB-Matrix angezeigt. Die Anzeige wechselt alle 30 Sekunden zwischen der Anzeige der Indoor- oder Outdoor-Werte. Hierbei wird Threading verwendet, um die Anzeige regelmäßig zu aktualisieren, ohne den Hauptthread zu blockieren. Dadurch kann der Server weiterhin Anfragen empfangen und verarbeiten, während die Anzeige im Hintergrund aktualisiert wird.
 
 ## 4. Ergebnis
+![Matrix](https://github.com/user-attachments/assets/32f5fc16-19c9-446c-bd29-7f35798c6324)
