@@ -81,8 +81,15 @@ Auf den Raspberry PI Zero (WH) muss das RGB-Matrix-Bonnet angeschlossen werden. 
 Anschließend muss das Datenkabel der RGB-Matrix mit dem IDC-Anschluss auf dem RGB-Matrix-Bonnet verbunden werden. Hierbei ist zu beachten, dass die Ausrichtung der Pins korrekt ist. Dann muss das Stromkabel der RGB-Matrix an die Stromanschlüsse auf dem RGB-Matrix-Bonnet angeschlossen werden. Dabei ist auf die Polarität des Stromanschluss zu achten.
 ![RPI_Bonnet_Matrix](https://github.com/user-attachments/assets/4ba241dd-2a7e-456d-829f-ebaa44ae95c8)
 
-### 3.2 Anmerkungen zum Code
-#### 3.2.1 ESP32
+### 3.2 3D-Druck des Outdoor-ESP32-Moduls
+In dem Ordner "3D-Drucker_Vorlagen" ist die für dieses Projekt erstellte Hülle für das ESP32-Outdoor-Modul zu finden. Die Hülle besteht aus Ober- und Unterseite und enthalten. An der Oberseite werden der ESP32 sowie die Sensoren befestigt, welche an der Seite des Gehäuses eine kleine Öffnung haben, damit sie die Außenwerte messen können.
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/0ee92d79-56e6-41cc-8a5e-220ca954fb24" width="45%" />
+  <img src="!https://github.com/user-attachments/assets/fc6051e2-60aa-47cc-9721-9e0c4d14cada" width="45%" />
+</p>
+
+### 3.3 Anmerkungen zum Code
+#### 3.3.1 ESP32
 Für das Modul (ESP32WeatherStation) habe ich unter anderem die folgenden Bibliotheken genutzt: 
 - **WiFi.h:** zum Erstellen einer W-Lan-Verbindung
 - **HTTPClient.h** zum Erstellen der HTTP-Anfragen
@@ -93,7 +100,7 @@ Anschließend wird vom ESP32 die Verbindung mit dem WLAN gestartet und so lange 
 Nachdem ein Responsecode erhalten wurde, geht der ESP32 für 10 Minuten in den Deep Sleep. Dieser sorgt dafür, dass der ESP32 in dieser Zeit nur eine sehr geringe Menge an Strom verbraucht und statt nur einigen Tagen einige Monate arbeiten kann, ohne dass die Akkus gewechselt werden müssen.
 Da der ESP in den Deep Sleep Modus wechselt, ist kein Code im Loop, weil der Setup bei jedem Durchlauf als Loop genutzt wird und der Code dadurch auch nie in den Loop geraten könnte.
 
-#### 3.2.2 Raspberry PI Zero (WH)
+#### 3.3.2 Raspberry PI Zero (WH)
 Für die Implementierung des Codes wird das Github-Repository von RPI-RGB-LED-Matrix von H. Zeller genutzt (https://github.com/hzeller/rpi-rgb-led-matrix). Unter dem Pfad "rpi-rgb-led-matrix/bindings/python/samples/" habe ich dann die Python-Datei "server.py" erstellt, die die Daten der ESP32-Module empfängt, verarbeitet und auf der RGB-Matrix ausgibt.
 Die wichtigsten, in diesem Code verwendeten Bibliotheken sind:
 - **Flask:** zum Erstellen des Webservers, der HTTP-Anfrage empfängt
@@ -103,6 +110,4 @@ Die wichtigsten, in diesem Code verwendeten Bibliotheken sind:
 Die Flask-POST-Route "/data" empfängt die Daten von den ESP32-Geräten. Zu Beginn wird geprüft, ob username und password richtig sind. und die Werte aus dem Request in passenden Variablen gespeichert. Anschließend werden die Daten analysiert um zu prüfen, ob es wahrscheinlich regnet oder nicht. Bei Regen hat man eine hohe Luftfeuchtigkeit sowie einen geringen Luftdruck. Daher habe ich mich dazu entschieden, die Kriterien für Regen auf humidity > 80 und pressure < 1009 zu setzen. Ansonsten wird der Wert "No Rain" vergeben. Wenn das ESP32 ein "ESP32_indoor" ist, werden anschließend die Daten von indoor_data upgedated, wenn der ESP32 ein "ESP32_outdoor" ist, werden die Werte von outdoor_data upgedated. indoor_data und outdoor_data sind globale Variablen, die die Daten des Indoor bzw. Outdoor Gerätes speichert. <br>
 In der folgenden Funktion namens "update_display()" werden die grafischen Elemente erstellt und auf der RGB-Matrix angezeigt. Die Anzeige wechselt alle 30 Sekunden zwischen der Anzeige der Indoor- oder Outdoor-Werte. Hierbei wird Threading verwendet, um die Anzeige regelmäßig zu aktualisieren, ohne den Hauptthread zu blockieren. Dadurch kann der Server weiterhin Anfragen empfangen und verarbeiten, während die Anzeige im Hintergrund aktualisiert wird.
 
-## 4. Evaluation
-
-## 5. Fazit
+## 4. Ergebnis
