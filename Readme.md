@@ -7,7 +7,7 @@ Bei meinem Projekt nutze ich zwei ESP32, die mit jeweils einem BME280 und einem 
 
 ## 2. Beschreibung der genutzten Hardware-Komponenten
 - **2x ESP32 (12,99€)**
-        Bei den genutzten ESPs handelt es sich um ESP32 Typ C NodeMCU Entwicklungsboards. Jedes Board ist mit einem ESP-WROOM-32 Modul ausgestattet, das einen leistungsstarken Mikrocontroller mit Dual-Core-Prozessoren und integrierter 2.4GHz Dual-Mode WiFi und Bluetooth-Funktionalität bietet.
+        Bei den genutzten ESPs handelt es sich um ESP32 Typ C NodeMCU Entwicklungsboards. Jedes Board ist mit einem ESP-WROOM-32 Modul ausgestattet, das einen leistungsstarken Mikrocontroller mit Dual-Core-Prozessoren und integrierter 2.4GHz Dual-Mode WiFi und Bluetooth-Funktionalität bietet. Durch den Deep-Sleep-Modus eignet sich der ESP32 besonders gut für          dieses Projekt, da das Outdoor-Modul mit einem Akku betrieben werden muss.
         ![image](https://github.com/user-attachments/assets/5f817885-a866-432a-8d2b-a6fd6bf78989)
 
 - **2x BME280 (15,99€)**
@@ -18,7 +18,7 @@ Bei meinem Projekt nutze ich zwei ESP32, die mit jeweils einem BME280 und einem 
          Als Lichtsensoren wurden KY-018 LDR (Light Dependent Resistor) Lichtsensor-Module genutzt. Diese Sensoren messen die Helligkeit des Umgebungslichts und bestehen aus einer Fotodiode, die an einen Widerstand gekoppelt ist. Der Widerstandswert des Sensors ändert sich je nach Lichtintensität
          ![image](https://github.com/user-attachments/assets/26e6f839-9e0a-4e8f-9716-f92a50a15c58)
   
-- **14x Jumper Cable (10cm Male-Female) (6,99€)**
+- **14x Jumper Cable (10cm, 7x Male-Female, 7x Female-Female) (6,99€)**
           Die Jumper Cables werden benötigt, um die Sensoren mit den ESP32 zu verbinden.
           ![image](https://github.com/user-attachments/assets/005a0532-5370-4d0a-a3a9-bdcc0f8b3182)
 
@@ -46,7 +46,17 @@ Bei meinem Projekt nutze ich zwei ESP32, die mit jeweils einem BME280 und einem 
 
         
 ## 3. Implementierung
-Die Implementierung setzt sich aus 2 Teilen zusammen: Den beiden ESP32-Sensormodulen und der Basisstation mit einem lokalen Server auf dem Raspberry PI Zero.
+Die Implementierung setzt sich aus 2 Teilen zusammen: Den beiden ESP32-Sensormodulen und der Basisstation mit einem lokalen Server und Ausgabe der Daten auf der RGB-Matrix auf dem Raspberry PI Zero.
+Im Folgenden werde ich nun auf den Aufbau der Hardware eingehen und anschließend den erstellten Code erklären.
+
+### 3.1 Aufbau der Komponenten
+#### 3.1.1 ESP32
+Für den Lichtsensor habe ich die PINs VIN, GND und D34 genutzt. VIN und GND werden für die Stromzufuhr vom ESP32 zum Lichtsensor benötigt und der PIN 34 ist ein Einganspin, was bedeutet, dass dieser PIN nur Signale empfangen kann. Zusätzlich besitzt er keine Pull-Up oder Pull-Down Widerstand, weshalb er sich auch gut für analoge Signale eignet.
+
+Für den BME280 habe ich die PINs 3V3, GND, D21 und D22 genutzt. Ebenfalls wie beim Lichtsensor werden 3V3 und GND für die Stromzufuhr zum Messsensor benötigt. Die weiteren genutzten PINs 21 und 22 sind die Standard-PINs für das I2C-Protokoll zur Datenübertragung. D21 muss für SDA (Serial Data) genutzt werden und D22 für SCL (Serial Clock).
+
+#### 3.1.2 Raspberry PI Zero (WH)
+Auf den Raspberry PI
 
 ## 4. Evaluation
 
