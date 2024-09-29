@@ -72,7 +72,8 @@ Für den Code habe ich unter anderem die folgenden Bibliotheken genutzt:
 - **Adafruit_BME280.h** zum Auslesen der Werte des BME280
 <br>
 Für den Code müssen noch WLAN-SSID und WLAN-Passwort im Code hinterlegt werden. Neben den WLAN-Zugangsdaten müssen/sollten auch noch User und Passwort für den HTTP-Request abgesendet werden.
-Anschließend wird vom ESP32 die Verbindung mit dem WLAN gestartet und so lange gewartet, bis die Verbindung hergestellt wurde.
+Anschließend wird vom ESP32 die Verbindung mit dem WLAN gestartet und so lange gewartet, bis die Verbindung hergestellt wurde. Nachdem dann geprüft wurde, ob die Sensoren vorhanden sind und die Daten ermittelt wurden, erstellt der ESP32 einen HTTP-Request und sendet die Daten an den Server. Neben den Sensordaten, übermittelt der ESP32 auch, ob es sich um den "ESP32_indoor" oder "ESP32_outdoor" handelt, so kann der Server später entscheiden, woher die Daten kommen.
+Nachdem ein Responsecode erhalten wurde, geht der ESP32 in den Deep Sleep. Dieser sorgt dafür, dass der ESP32 in dieser Zeit nur eine sehr geringe Menge an Strom verbraucht und statt nur einigen Tagen einige Monate arbeiten kann, ohne dass die Akkus gewechselt werden müssen.
 
 #### 3.2.2 Raspberry PI Zero (WH)
 Für die Implementierung des Codes wird das Github-Repository von RPI-RGB-LED-Matrix von H. Zeller genutzt (https://github.com/hzeller/rpi-rgb-led-matrix).
