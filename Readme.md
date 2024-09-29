@@ -70,6 +70,7 @@ Für den Code habe ich unter anderem die folgenden Bibliotheken genutzt:
 - **WiFi.h:** zum Erstellen einer W-Lan-Verbindung
 - **HTTPClient.h** zum Erstellen der HTTP-Anfragen
 - **Adafruit_BME280.h** zum Auslesen der Werte des BME280
+<br>
 Für den Code müssen noch WLAN-SSID und WLAN-Passwort im Code hinterlegt werden. Neben den WLAN-Zugangsdaten müssen/sollten auch noch User und Passwort für den HTTP-Request abgesendet werden.
 Anschließend wird vom ESP32 die Verbindung mit dem WLAN gestartet und so lange gewartet, bis die Verbindung hergestellt wurde.
 
