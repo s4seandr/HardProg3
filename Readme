@@ -1,1 +1,26 @@
-Weather Station for ESP32
+Wetterstation mit ESP32 und RaspberryPI Zero
+
+Einleitung und Motivation zur Wetterstation:
+Da Wetterdienste das aktuelle Wetter für meine Region (gefühlt) immer schlechter anzeigen und voraussagen, mich diese Daten jedoch interessieren, 
+wollte ich mir schon länger eine Wetterstation für zuhause kaufen. Mit diesem Projekt habe ich nun die Möglichkeit eine Wetterstation selbt umzusetzen.
+Dadurch werde ich nun in Zukunft selbst meine aktuellen Wetterdaten für Innen- und Außenbereich erfassen können und diese auf einem geeigneten Medium ausgeben
+oder auch für andere Anwendungen weiterverwenden können.
+Bei meinem Projekt nutze ich zwei EPS32 die mit jeweils einem BME280 und einem Lichtsensor ausgestattet sind. Ein ESP-Modul soll mit Hilfe eines Batteriemoduls 
+die Wetterdaten außen messen, während der zweite ESP die Werte in der Wohnung misst. 
+Die gemessenen Werte sollen anschließend über das Wifi an den RaspberryPi Zero übermittelt werden, der mit Hilfe einer RGB-LED-Matrix (64x32) die Daten ausgibt.
+
+Beschreibung der genutzten Hardware-Komponenten:
+ESP32
+BME280
+Lichtsensor
+Batteriemodul mit 2 Wiederaufladbaren Akkus
+
+RapsberryPI Zero (WH)
+RGB-Matrix-Bonnet für einen RaspberryPI
+RGB-Matrix (64x32)
+
+Implementierung:
+
+Evaluation:
+
+Fazit:
