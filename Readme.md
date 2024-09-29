@@ -60,9 +60,14 @@ Auf den Raspberry PI Zero (WH) muss das RGB-Matrix-Bonnet angeschlossen werden. 
 
 ### 3.2 Anmerkungen zum Code
 #### 3.2.1 ESP32
+Für den Code haben wir die folgenden Bibliotheken genutzt: 
+- **WiFi.h:** zum Erstellen einer W-Lan-Verbindung
+- **HTTPClient.h** zum Erstellen der HTTP-Anfragen
+- **Adafruit_BME280.h** zum Auslesen der Werte des BME280
 
 #### 3.2.2 Raspberry PI Zero (WH)
 Für die Implementierung des Codes wird das Github-Repository von RPI-RGB-LED-Matrix von H. Zeller genutzt (https://github.com/hzeller/rpi-rgb-led-matrix).
+
 ## 4. Evaluation
 
 ## 5. Fazit
