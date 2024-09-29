@@ -20,31 +20,42 @@ Bei meinem Projekt nutze ich zwei ESP32, die mit jeweils einem BME280 und einem 
 
 - **2x Lichtsensor (5,49€)** <br>
          Als Lichtsensoren wurden KY-018 LDR (Light Dependent Resistor) Lichtsensor-Module genutzt. Diese Sensoren messen die Helligkeit des Umgebungslichts und bestehen aus einer Fotodiode, die an einen Widerstand gekoppelt ist. Der Widerstandswert des Sensors ändert sich je nach Lichtintensität.
-         ![image](https://github.com/user-attachments/assets/26e6f839-9e0a-4e8f-9716-f92a50a15c58)
+         <br>
+          <img src="https://github.com/user-attachments/assets/26e6f839-9e0a-4e8f-9716-f92a50a15c58" align="left" width="50%">
+        <br clear="left">
   
 - **14x Jumper Cable (10cm, 8x Male-Female, 6x Female-Female) (6,99€)** <br>
           Die Jumper Cables werden benötigt, um die Sensoren mit den ESP32 zu verbinden.
-          ![image](https://github.com/user-attachments/assets/005a0532-5370-4d0a-a3a9-bdcc0f8b3182)
+          <br>
+          <img src="https://github.com/user-attachments/assets/005a0532-5370-4d0a-a3a9-bdcc0f8b3182" align="left" width="50%">
+        <br clear="left">
 
 - **1x Batteriemodul mit 2x wiederaufladbaren Akkus (9,99€ + 26,99€)** <br>
            Das Batteriemodul hat Platz für 2 Batterien und verfügt über einen integrierten Überspannschutz und hat im Gegensatz zu hat mehrere nutzbare Ausgänge und im Gegensatz zu den meisten herkömmlichen Powerbanks die Möglichkeit ein automatisches Abstellen des Stromflusses bei zu geringem Verbrauch zu verhindern.
            Da bei diesem Projekt der Deep-Sleep-Modus des ESP32 genutzt wird, ist das unerlässlich.
-           ![image](https://github.com/user-attachments/assets/e0545760-7253-477e-8b14-d6c34914deab)
-          <br>
+           <br>
+          <img src="https://github.com/user-attachments/assets/e0545760-7253-477e-8b14-d6c34914deab" align="left" width="50%">
+        <br clear="left">
           Die genutzten Akkus sind 3.7V NiMH Akkus mit einer Kapazität von 3000mAh. Sie haben das Format 18650.
           ![image](https://github.com/user-attachments/assets/652f8ff0-d77d-4a0f-960b-caca0fa136df)
 
 - **1x RaspberryPI Zero (WH) (23,49€)** <br>
           Der Raspberry Pi Zero WH ist eine kompakte und kostengünstige Version des Raspberry Pi, die mit einer vorinstallierten GPIO-Stiftleiste geliefert wird. Dies erleichtert die Verbindung mit anderen Geräten und Sensoren, ohne dass Löten erforderlich ist.
-          ![image](https://github.com/user-attachments/assets/e6eb409b-535b-4562-9659-08018a718a17)
+          <br>
+          <img src="https://github.com/user-attachments/assets/e6eb409b-535b-4562-9659-08018a718a17" align="left" width="50%">
+        <br clear="left">
 
 - **1x RGB-Matrix-Bonnet für einen RaspberryPI (25,99€)** <br>
           Das Adafruit RGB Matrix Bonnet ist ein Erweiterungsmodul für den Raspberry Pi, das die Steuerung von RGB-LED-Matrizen vereinfacht. Es wird direkt auf den Raspberry Pi gesteckt und ermöglicht die einfache Ansteuerung von RGB-Matrizen.
-          ![image](https://github.com/user-attachments/assets/97870010-1886-4e30-beee-abe3eaa504a7)
+          <br>
+          <img src="https://github.com/user-attachments/assets/97870010-1886-4e30-beee-abe3eaa504a7" align="left" width="50%">
+        <br clear="left">
 
 - **1x RGB-Matrix (64x32) (29,99€)** <br>
           Die Matrix besteht aus 2048 RGB-LEDs und ermöglicht die Darstellung von Texten, farbigen Bildern und Animationen.
-          ![image](https://github.com/user-attachments/assets/3d109b13-05a8-4769-8cd5-41f64850c5a8)
+          <br>
+          <img src="https://github.com/user-attachments/assets/3d109b13-05a8-4769-8cd5-41f64850c5a8" align="left" width="50%">
+        <br clear="left">
   
 - **1x 3d-gedruckte Hülle für den Outdoor-Sensor (1 Kasten Bayreuther Bier)** <br>
         Als Druckmaterial wurde ASA verwendet, da dieses beständiger als PLA ist und zusätzlich auch UV-beständig ist. Dadurch eignet es sich viel besser zum Outdoor-Einsatz, ist jedoch auch schwerer zu drucken.
