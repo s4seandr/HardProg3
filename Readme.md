@@ -43,7 +43,7 @@ Bei meinem Projekt nutze ich zwei ESP32, die mit jeweils einem BME280 und einem 
           ![image](https://github.com/user-attachments/assets/3d109b13-05a8-4769-8cd5-41f64850c5a8)
   
 - **1x 3d-gedruckte Hülle für den Outdoor-Sensor (1 Kasten Bayreuther Bier)** <br>
-        Als Druckmaterial wurde ASA verwendet, da dieses beständiger als PLA ist und zusätzlich auch UV-beständig ist. Dadurch eignet es sich viel besser zum Outdoor-Einsatz.
+        Als Druckmaterial wurde ASA verwendet, da dieses beständiger als PLA ist und zusätzlich auch UV-beständig ist. Dadurch eignet es sich viel besser zum Outdoor-Einsatz, ist jedoch auch schwerer zu drucken.
         
 ## 3. Implementierung
 Die Implementierung setzt sich aus 2 Teilen zusammen: Den beiden ESP32-Sensormodulen und der Basisstation mit einem lokalen Server und Ausgabe der Daten auf der RGB-Matrix auf dem Raspberry PI Zero.
