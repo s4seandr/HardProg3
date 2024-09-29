@@ -95,6 +95,10 @@ Da der ESP in den Deep Sleep Modus wechselt, ist kein Code im Loop, weil der Set
 
 #### 3.2.2 Raspberry PI Zero (WH)
 Für die Implementierung des Codes wird das Github-Repository von RPI-RGB-LED-Matrix von H. Zeller genutzt (https://github.com/hzeller/rpi-rgb-led-matrix). Unter dem Pfad "rpi-rgb-led-matrix/bindings/python/samples/" habe ich dann die Python-Datei "server.py" erstellt, die die Daten der ESP32-Module empfängt, verarbeitet und auf der RGB-Matrix ausgibt.
+Die wichtigsten, in diesem Code verwendeten Bibliotheken sind:
+- **Flask:** zum Erstellen des Webservers, der HTTP-Anfrage empfängt
+- **RGBMatrix:** zum Steuern der RGB-Matrix
+- **time & threading:** zum Verwalten der Zeit und zum regelmäßigen Aktualisieren der Anzeige
 
 ## 4. Evaluation
 
