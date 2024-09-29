@@ -58,6 +58,10 @@ Für den BME280 habe ich die PINs 3V3, GND, D21 und D22 genutzt. Ebenfalls wie b
 #### 3.1.2 Raspberry PI Zero (WH)
 Auf den Raspberry PI Zero (WH) muss das RGB-Matrix-Bonnet angeschlossen werden. Hierfür müssen der Bonnet entsprechend auf die Header gesetzt werden. Anschließend muss das Datenkabel der RGB-Matrix mit dem IDC-Anschluss auf dem RGB-Matrix-Bonnet verbunden werden. Hierbei ist zu beachten, dass die Ausrichtung der Pins korrekt ist. Dann muss das Stromkabel der RGB-Matrix an die Stromanschlüsse auf dem RGB-Matrix-Bonnet angeschlossen werden. Dabei ist auf die Polarität des Stromanschluss zu achten.
 
+### 3.2 Anmerkungen zum Code
+#### 3.2.1 ESP32
+
+#### 3.2.2 Raspberry PI Zero (WH)
 
 ## 4. Evaluation
 
