@@ -85,7 +85,7 @@ Anschließend muss das Datenkabel der RGB-Matrix mit dem IDC-Anschluss auf dem R
 In dem Ordner "3D-Drucker_Vorlagen" ist die für dieses Projekt erstellte Hülle für das ESP32-Outdoor-Modul zu finden. Die Hülle besteht aus Ober- und Unterseite und enthalten. An der Oberseite werden der ESP32 sowie die Sensoren befestigt, welche an der Seite des Gehäuses eine kleine Öffnung haben, damit sie die Außenwerte messen können.
 <p align="center">
   <img src="https://github.com/user-attachments/assets/0ee92d79-56e6-41cc-8a5e-220ca954fb24" width="45%" />
-  <img src="!https://github.com/user-attachments/assets/fc6051e2-60aa-47cc-9721-9e0c4d14cada" width="45%" />
+  <img src="https://github.com/user-attachments/assets/fc6051e2-60aa-47cc-9721-9e0c4d14cada" width="45%" />
 </p>
 
 ### 3.3 Anmerkungen zum Code
