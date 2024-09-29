@@ -121,4 +121,4 @@ In der folgenden Funktion namens "update_display()" werden die grafischen Elemen
 ## 4. Fazit
 Wie in der folgenden Abbildung zu sehen ist, funktioniert das Modul wie gewünscht: <br>
 ![Matrix](https://github.com/user-attachments/assets/32f5fc16-19c9-446c-bd29-7f35798c6324)
-Die Ergebnisse der Wetterstation sind 
+Die Ergebnisse der Sensormessungen werden erfolgreich an den Server auf dem RaspberryPI übertragen und anschließend von diesem auf der RGB-Matrix ausgegeben. Konkret wird der Ursprung der Daten (Indoor/Outdoor), die Temperatur, die Luftfeuchtigkeit sowie eventueller Regenfall und die Tageszeit anhand der Lichteinstrahlung angezeigt. Somit ist das Projekt insgesamt gelungen, da die vorab definierten Ziele erreicht wurden. Jedoch gilt noch zu prüfen, wie reliabel der Regenfall ermittelt wird. Im Falle einer mangelnden Reliabilität dieser Messungen könnte perspektivisch eine Anpassung der Werte oder das Hinzufügen weiterer Sensoren hilfreich sein. Beispiele für weitere interessante Sensoren wären Luftpartikelsensoren, die auch hilfreiche Daten für Allergiker liefern, oder auch ein CO2-Sensor, welcher die CO2-Konzentration in der Luft ermittelt.
